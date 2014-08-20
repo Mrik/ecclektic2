@@ -1,0 +1,72 @@
+/*
+Theme Name: Canvas
+Description: Neat. Clean. A touch of blue to your taste.
+Author: WooThemes
+Author URI: http://woothemes.com/
+Author Email: 
+Tags: grey, blue, business
+
+Note: the plugin won't recognize any additional styles if you add them. The styles below offer all the possibilities of Wysija.
+
+List of email client compatible fonts:
+
+Arial
+Arial Black
+Comic Sans MS
+Courier New
+Georgia
+Impact
+Tahoma
+Times New Roman
+Trebuchet MS
+Verdana
+
+*/
+html {
+    background-color: #eeeeee; /* cannot be transparent and will default to white */
+}
+
+header {
+    background-color: transparent; /* can be transparent */
+}
+body {
+    color:#555555;
+    font-family: "Arial";
+    font-size: 12px;
+    background-color: #ffffff; /* can be transparent */
+}
+footer {
+    background-color: transparent; /* can be transparent */
+}
+h1 {
+    color: #222222;
+    font-family: Georgia;
+    font-size: 24px;
+    font-style:italic;
+}
+h2 {
+    color: #222222;
+    font-family: Georgia;
+    font-size: 18px;
+    font-style:italic;
+}
+h3 {
+    color: #777777;
+    font-family: Georgia;
+    font-size: 14px;
+    font-style:italic;
+}
+a {
+    color: #3088ff;
+    text-decoration:none;
+    font-family: Trebuchet MS;
+}
+unsubscribe {
+    color:#3088ff;
+    text-decoration:underline;
+}
+viewbrowser {
+	font-family: "Arial";
+	font-size:12px;
+	color:#777777;
+}

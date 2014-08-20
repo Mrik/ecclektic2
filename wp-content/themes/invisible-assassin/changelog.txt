@@ -1,0 +1,10 @@
+Version 1.0.0.3
+
+	i) Initial Release
+	
+Version 1.0.0.4
+
+	i) Added Pro Version Details
+	ii) Fixed issues with $content_width
+	iii) Added Theme Copyright	
+	iv) Fixed other numerous bugs

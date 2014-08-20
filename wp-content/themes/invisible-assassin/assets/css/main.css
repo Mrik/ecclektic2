@@ -1,0 +1,334 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:900);
+/*
+*	Main.less
+*	Main Design for theme
+*	This file contains information about the Structure of the theme.
+*
+*	Index:
+*	
+*		• Pre Requisite/CSS
+*		• Top Bar
+*			• Top Menu
+*			• Search Bar
+*			• Social Icons
+*		• Masthead a.k.a Header
+*		• Slider
+*		• Content
+*			• Primary
+*			• Secondary(if any)
+*		• Footer
+*			• Widget Area(if any)
+*			• Colophon		
+*		• Responsive Codes
+*
+*/
+/* ---------------- Google Fonts --------------------------- */
+/* --------------- Color Variables ------------------------- */
+/* ---------------- Font Variables ------------------------- */
+.site-title-font {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 900;
+}
+.body-font {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*
+ ------------------- Pre Requisite/Reset ----------------
+*/
+.container {
+  margin: auto;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #666666;
+}
+a {
+  color: #666666;
+  transition: 0.4s all ease;
+}
+a:visited {
+  color: #666666;
+}
+a:hover {
+  color: #000000;
+}
+/* ----------------- Top Bar --------------------------- */
+#top-bar {
+  box-shadow: 0px 2px 4px 0px #cacaca;
+}
+#top-bar #site-navigation a {
+  color: #666666;
+  text-transform: uppercase;
+  padding: 8px 13px;
+}
+#top-bar #site-navigation a:hover {
+  color: #000000;
+}
+#top-bar #site-navigation a:visited {
+  color: #666666;
+}
+#top-bar #site-navigation ul ul {
+  background: #ffffff;
+  top: 2.5em;
+}
+#top-bar #site-navigation ul ul a {
+  padding: 5px;
+}
+#top-bar #site-navigation ul ul ul {
+  top: -0.1em;
+}
+#top-bar #social-icons {
+  padding-top: 4px;
+}
+#top-bar #social-icons img {
+  width: 26px;
+  height: 26px;
+  float: right;
+}
+/* ----------------- Masthead ----------------------- */
+#masthead {
+  text-align: center;
+  padding: 20px;
+  border: none;
+}
+#masthead .site-title {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 900;
+}
+#masthead .site-title a {
+  color: #000000;
+  font-size: 42px;
+}
+#masthead .site-title a:hover {
+  color: #666666;
+}
+#masthead .site-description {
+  margin-top: -10px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: lighter;
+}
+/* -------------------- Slider -------------------*/
+.bx-wrapper {
+  box-shadow: none;
+}
+.bx-wrapper ul {
+  margin-left: 0px;
+}
+.bx-wrapper img {
+  min-width: 100%;
+}
+.bx-wrapper .bx-caption {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.bx-wrapper .bx-viewport {
+  box-shadow: none;
+}
+.bx-wrapper a.bx-next {
+  margin-right: 12px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 20px;
+  border-radius: 0px;
+  height: 8px;
+}
+/* -------------------- Content ------------------ */
+#content {
+  margin-top: 40px;
+}
+.page-header {
+  margin-top: -20px;
+}
+#primary article .after-thumb {
+  overflow: auto;
+  margin-top: -20px;
+}
+#primary article .after-thumb .entry-title a {
+  font-size: 22px;
+  color: #666666;
+}
+#primary article .after-thumb .entry-title a:hover {
+  color: #000000;
+}
+#primary article .after-thumb h1.entry-title {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+#primary .entry-content {
+  margin-top: 0.3em;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#secondary {
+  margin-top: -20px;
+  font-size: 13px;
+}
+#secondary h1.widget-title {
+  font-size: 15px;
+  border-top: solid 2px #b3b3b3;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+#secondary a {
+  color: #666666;
+}
+#secondary a:hover {
+  color: #000000;
+}
+#secondary ul {
+  margin-left: 20px;
+}
+#secondary ul ul {
+  margin-left: 5px;
+}
+#secondary .widget_search input[type=search] {
+  width: 250px;
+}
+article table {
+  border: solid 1px #eee;
+}
+article table tr:nth-child(even) {
+  background: #ffffff;
+}
+article table th {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+}
+article table td {
+  padding: 5px 10px;
+}
+/* --------------- pagination ------------ */
+.pagination {
+  margin: 20px 0;
+  padding-top: 25px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+.pagination ul {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0px;
+}
+.pagination ul > li {
+  display: inline;
+}
+.pagination ul > li > a {
+  color: #404040;
+  transition: all 0.4s ease;
+}
+.pagination ul > li > a:hover {
+  color: #000000;
+  background: #bfbfbf;
+}
+.pagination .current {
+  background: #bfbfbf;
+}
+.pagination ul  > li  > a,
+.pagination ul  > li  > span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  /*  border: 1px solid desaturate(@default-background, 55%); */
+
+  border-left-width: 0;
+  display: inline-block;
+  color: #666666;
+}
+.pagination ul  > li:first-child  > a,
+.pagination ul  > li:first-child  > span {
+  border-left-width: 1px;
+}
+.pagination ul  > li:last-child  > a,
+.pagination ul  > li:last-child  > span {
+  border-rigth-width: 1px;
+}
+/* --------------- comments -------------- */
+#respond input[type=text] {
+  max-width: 450px;
+}
+#comments ol.comment-list {
+  list-style: none;
+  margin-left: 0px;
+}
+#comments li.comment {
+  border: solid 1px #eee;
+  padding: 10px;
+  margin-top: 15px;
+  list-style: none;
+  background: #f9f9f9;
+}
+#comments li.trackback {
+  border: solid 1px #eee;
+  padding: 10px;
+  background: #f9f9f9;
+  margin-top: 10px;
+}
+#comments .vcard img {
+  border: solid 4px #e6e6e6;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
+}
+#comments .comment-metadata {
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  li.comment {
+    margin-left: -5%;
+  }
+}
+/* --------------- footer ---------------- */
+#colophon {
+  text-align: center;
+  border-top: solid 1px #eee;
+  padding: 15px;
+  background: #eee;
+  padding-bottom: 4px;
+  margin-top: 50px;
+}
+#colophon .site-info {
+  text-align: left;
+}
+#colophon .footer-menu {
+  text-align: right;
+}
+#colophon .footer-menu ul ul {
+  display: none;
+}
+#colophon .footer-menu ul li {
+  display: inline;
+  padding-right: 10px;
+}
+/*--------------- responsive cheats ----------- */
+@media screen and (max-width: 991px) {
+  #social-icons {
+    float: none;
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+  #social-icons img {
+    float: none !important;
+  }
+  .featured-thumb {
+    margin-bottom: 15px;
+  }
+  #secondary {
+    margin-top: 25px;
+  }
+}
